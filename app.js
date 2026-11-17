@@ -1,6 +1,8 @@
-let task;
+let topic;
+let description;
 
 function addTask() {
-    task = document.getElementById("searchTask").value;
+    topic = document.getElementById("topic").value;
+    description = document.getElementById("description").value;
     document.getElementById("toDoList").innerHTML += `<div>${task}</div>`;
 }
