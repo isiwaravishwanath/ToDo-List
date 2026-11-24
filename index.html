@@ -20,7 +20,7 @@
         <div class="form-field mt-3 d-flex">
             <input type="Text" class="form-control" id="searchFld" placeholder="Search your ToDo">
             <button type="button" class="btn-outline theme-primary" onclick="searchBtn()">Search</button>
-            <button type="button" class="btn-outline theme-success" onclick="addBtn()" data-bs-toggle="dialog"
+            <button type="button" class="btn-outline theme-success" data-bs-toggle="dialog"
                 data-bs-target="#exampleDialog">Add</button>
         </div>
 
@@ -42,12 +42,12 @@
                 <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
             </div>
             <div class="dialog-body">
-            <input type="Text" class="form-control" id="searchFld" placeholder="Title">
-            <input type="Text" class="form-control mt-2" id="searchFld" placeholder="Description">
+            <input type="Text" class="form-control" id="titleFld" placeholder="Title">
+            <input type="Text" class="form-control mt-2" id="descriptionFld" placeholder="Description">
             </div>
             <div class="dialog-footer">
                 <button type="button" class="btn-outline theme-secondary" data-bs-dismiss="dialog">Close</button>
-                <button type="button" class="btn-outline theme-success">Add</button>
+                <button type="button" class="btn-outline theme-success" onclick="addBtn()">Add</button>
             </div>
         </dialog>
 
