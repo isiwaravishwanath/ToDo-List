@@ -2,7 +2,7 @@ function addBtn() {
     let title = document.getElementById("titleFld").value;
     let description = document.getElementById("descriptionFld").value;
     if(title==="") return;
-    if(description==="") description="--No Description"
+    if(description==="") description="--No Description--";
 
     const loadToDo = [];
     let details = {
@@ -14,7 +14,7 @@ function addBtn() {
     // document.getElementById("toDos").innerHTML ="";
     for (let detail of loadToDo) {
         document.getElementById("toDos").innerHTML += `
-            <div class="d-flex mt-3 align-items-center">
+            <div class="d-flex mt-3 align-items-center card">
                 <div class="form-field">
                     <input type="checkbox" id="checkLabel" class="check" />
                 </div>
