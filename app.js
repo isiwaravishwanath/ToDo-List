@@ -2,6 +2,7 @@ function addBtn() {
     let title = document.getElementById("titleFld").value;
     let description = document.getElementById("descriptionFld").value;
     if(title==="") return;
+    if(description==="") description="--No Description--";
 
     const loadToDo = [];
     let details = {
